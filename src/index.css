@@ -1,13 +1,228 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,500;8..30,700;8..30,900&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@200;400;500;700;900&family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+  max-width: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray !important;
 }
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active{
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+.footer{
+  color: white;
+  padding: 2px;
+  /* background: linear-gradient(to right,#B6BBC4,#B0A695); */
+  /* background: linear-gradient(to right,#61677A,#272829); */
+  background: linear-gradient(to right,#61677A,#272829);
+}
+
+.footer a{
+  color: white;
+  text-decoration: none;
+  padding: 6px;
+  border-radius:10px ;
+}
+
+.footer a:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+}
+
+.copy {
+  transition: transform 0.8s ease-in-out; /* add transition property to .footer a */
+}
+
+.copy:hover {
+  color: black; /* change color on hover */
+  transform: scale(1.05); /* add scale transformation on hover */
+  /* add underline on hover */
+}
+
+/* page not found */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blue{
+  text-decoration: none;
+  color: black;
+}
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* contact css */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Register Page */
+
+.register{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+
+}
+
+/* product detail page */
+.product-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding: 10px;
+  gap: 16px;
+}
+
+.product-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.thumbnail-images {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-type {
+  color: #6b46c1;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size:40px;
+}
+
+.product-description {
+  color: #575d67;
+  font-size:18px;
+  font-weight: 500;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity-control {
+  display: flex;
+  gap: 8px;
+}
+
+.quantity-button {
+  background-color: #d1d5db;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.quantity {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #d1d5db;
+}
+
+.add-to-cart {
+  background-color: #6b46c1;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.product-ship{
+  font-weight: 500;
+  font-size: 17px;
+}
+.span-ship{
+  color: #6b46c1;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+
+
